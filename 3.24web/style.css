@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navMenu{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    padding-bottom: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-color: black;
+    background-image: url(https://wallpaperaccess.com/full/1817122.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    font-size: 15px;
+    color: white;
+}
+.contentContainer{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.contentLeft{
+    height: 300px;
+    background-image: url(https://preview.redd.it/hoos9up9i5251.png?auto=webp&s=d8268667cf66a5505d666d60a7173eb4903d0695);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50%;
+}
+.contentRight{
+    background-image: url(https://cdn.imgbin.com/20/16/0/imgbin-thunder-and-lightning-ZnzPSJQtxzsMTLMWd4Tf2gx30.jpg);
+    box-sizing: border-box;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 49.69%;
+    height: 0;
+    background-color:rgb(187, 187, 187);
+    width: 50%;
+    min-width: 300px;
+    color: white;
+}
+.footer{
+    margin-top: 10px;
+    height: 150px;
+    background-color: rgb(187, 187, 187);
+    width: 100%;
+}
+.navBut{
+    height: 100%;
+    width: 50%;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}.navBut1{
+    height: 100%;
+    width: 15%;
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.subNav1{
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.search{
+    height: 100%;
+    width: 100%;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.subNav1:hover{
+    background-color:rgb(187, 187, 187);
+    color: black;
+    cursor: pointer;
+}
+p{
+    text-align: center;
+    line-height: 1.3;
+    
+}
+p.left{
+    text-align: left;
+}
+.wrapCol{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.big{
+    font-size: 20px;
+}
+.band{
+    height: 300px;
+    width: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+h2{
+    letter-spacing: 5px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+h4{
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+p{
+    margin-bottom: 15px;
+    color: white;
+    width: 60%;
+}
+.members{
+    margin-top: 20px;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 50vh;
+}
+.quarter{
+    height: 70%;
+    width: 20%;
+    max-width: 225px;
+}
+.imgSize{
+    max-height: 300px;
+    width: 100%;
+    max-width: 200px;
+    position:static;
+}
+.members2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.search input[type=text]{
+    float: right;
+    padding: 4px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 10px;
+    font-size: 17px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}

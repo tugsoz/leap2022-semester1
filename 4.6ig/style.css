@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+}
+.center{
+    justify-content: center;
+    align-items: center;
+}
+header{
+    height: 60px;
+    box-shadow: 0 1px 0 rgb(219, 219, 219);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+}
+.topBar{
+    height: 100%;
+    width: 100%;
+    max-width: 975px;
+    margin: auto;
+}
+.logo{
+    min-width: 103px;
+    width: 333.5px;
+    height: 100%;
+    height: 36px;
+    align-items: center;
+}
+.logo img{
+    width: 103px;
+}
+.searchBar{
+    width: 268px;
+    height: 36px;
+    background-color: rgba(219, 219, 219, 0.6);
+    border-radius: 10px;
+    margin: auto 0;
+    align-items: center;
+}
+.searchBar div{
+    margin-left: 16px;
+    width: 25px;
+    align-items: center;
+}
+.searchBar img{
+    height: 16px;
+}
+.searchBar input{
+    height: 25px;
+    font-size: 16px;
+}
+.searchBar input:focus{
+    width: 100%;
+}
+.nav{
+    height: 100%;
+    width: 333.5px;
+    min-width: 280px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav div{
+    height: 24px;
+    width: 24px;
+    margin-left: 22px;
+}
+.profile{
+    border-radius: 50%;
+    background-image: url(https://365psd.com/images/istock/previews/1006/100634961-profile-icon-male-portrait.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    background-position: center;
+}
+.main{
+    width: 935px;
+    margin: 24px auto 0;
+}
+.story{
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    height: 87px;
+    width: 614px;
+    padding: 16px 0 10px;
+    margin-bottom: 24px;
+    border-radius: 3px;
+    overflow: auto;
+    white-space: nowrap;
+}
+.stories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 64px;
+    height: 84px;
+    margin-left: 14px;
+}
+.postContainer{
+    width: 614px;
+    height: auto;
+}
+.post{
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    border-radius: 3px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+}
+.proPic{
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.poster{
+    align-items: center;
+    padding: 14px 16px;
+    height: 26px;
+    justify-content: space-between;
+}
+.posterUser{
+    margin-left: 16px;
+    font-size: 14px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+.pro{
+    align-items: center;
+}
+.comment,.zurh,.dm{
+    margin-left: 16px;
+}
+.save{
+    margin-right: 16px;
+}
+.postBar{
+    height: 54px;
+    width: 100%;
+}
+.likeNumber{
+    height: 18px;
+    width: 100%;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 9px 0 4px 16px;
+}
+.postDesc{
+    min-height: 18px;
+    width: 100%;
+    font-size: 14px;
+    text-transform: lowercase;
+    margin: 4px 0 4px 16px;
+}
+.comments{
+    height: 18px;
+    width: 100%;
+    font-size: 14px;
+    color: #8E8E8E;
+    margin-left: 16px;
+}
+.postDate{
+    height: 18px;
+    width: 100%;
+    font-size: 10px;
+    color: #8E8E8E;
+    margin: 8px 0 12px 16px;
+}
+.addComm{
+    height: 59px;
+    width: 100%;
+    align-items: center;
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+}
+.smiley{
+    margin-left: 16px;
+    align-items: baseline;
+}
+.inputText input{
+    margin-left: 16px;
+    width: 511.85px;
+    height: 18px;
+}
+.postButton{
+    margin-right: 16px;
+    font-size: 14px;
+    color: rgba(0,149,246,0.3);
+    font-weight: bold;
+}
+input{
+    border: none;
+    background-color: transparent;
+}
+input:focus{
+    outline:none;
+}
+.postPic img{
+    width: 614px;
+    outline: 1px solid rgb(219, 219, 219);
+}
+.sugg{
+    width: 100%;
+    height: 100vh;
+    position: sticky;
+    max-width: 293px;
+    top: 94px;
+    margin-left:28px;
+}
+.myAcc{
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+}
+.suggestions{
+    width: 100%;
+}
+.suggestions > div{
+    margin: 16px 0;
+}
+.meta{
+    margin-top: 40px;
+    width: 100%;
+    height: 150px;
+    color: #C7C7C7;
+    font-size: 12px;
+}
+.proPIC{
+    height: 56px;
+    width: 56px;
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    border-radius: 50%;
+    background-image: url(./darion.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.myPro{
+    flex-direction: column;
+    justify-content: center;
+    height: 56px;
+    width: 193px;
+}
+.blueButton{
+    color: #0095F6;
+    font-size: 12px;
+    font-weight: bold;
+}
+.suggPro{
+    justify-content: space-between;
+    align-items: center;
+}
+.suggProPic{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.sPP1{
+    background-image: url(./random.png);
+}
+.spp2{
+    background-image: url(./s1mple.jpeg);
+}
+.sPP3{
+    background-image: url(./steam.png);
+}
+.sPP4{
+    background-image: url(./dog.jpeg);
+}
+.sPP5{
+    background-image: url(./starwars.jpeg);
+}
+.storyMaker{
+    font-size: 12px;
+    color: #262626;
+}
+.pP{
+    height: 56px;
+    width: 56px;
+    outline: 1px solid rgba(219, 219, 219, 0.6);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pP1{
+    background-image: url(https://64.media.tumblr.com/0f1d9be0930e0fd6e1421e0af63b4baa/4b38c49aa49bf456-a5/s1280x1920/54be3df4f578d67626ed9b3849f53d129667b940.jpg);
+}
+.pP2{
+    background-image: url(https://i1.sndcdn.com/avatars-000583246488-dhm5la-t500x500.jpg);
+}
+.pP3{
+    background-image: url(https://pbs.twimg.com/media/E9udtUmWEAIo7o5.png);
+}
+.pP4{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/021/553/786/large/pawel-mis-angryman2.jpg?1572121270);
+}
+.pP5{
+    background-image: url(https://miro.medium.com/max/400/1*B8c1ED3QV_yaa6PAWqDgMw.png);
+}
+.pP6{
+    background-image: url(http://pm1.narvii.com/6636/ddaf1c402f3767d7c934aac8520aa12c023fd31c_00.jpg);
+}
+.pP7{
+    background-image: url(https://i.pinimg.com/736x/dc/28/a7/dc28a77f18bfc9aaa51c3f61080edda5.jpg);
+}
+.pP8{
+    background-image: url(https://avatars.githubusercontent.com/u/5821883?v=4);
+}
+.pP9{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqa-oSnorIFryYFbHxD9khQyL3OIYLO1HIyw&usqp=CAU);
+}
+.pP10{
+    background-image: url(https://static.wikia.nocookie.net/5dc18413-2f92-4808-8259-992a6307998a/scale-to-width/755);
+}
+.pP11{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlgckJKuKPLPXykG5eBuRqTCMds9uWCMSOhg&usqp=CAU);
+}
+.pP12{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvLBm2YEmOLOzE8fCkgbq54KeV8NKUUrrM-w&usqp=CAU);
+}
+.pP13{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTRPVdLl17qnCodHsFn6CCWSHyYoI3hfXnwA&usqp=CAU);
+}
+.pP14{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4MacjHWJc4VtVa3yZ4uONIcFBmtU-O1StsQ&usqp=CAU);
+}
+.pP15{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMaL8ADYeMTI_d05vO12jbizVKahEtBc_nmQ&usqp=CAU);
+}
+.pP16{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDN4ouj-lx2EqFG3bUucc8MAU4heV_8eGNtg&usqp=CAU);
+}
+.pP17{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPPU4M7bKS00a4w7w2IpHISCLxYb9E-axj9Q&usqp=CAU);
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px){
+    .sugg{
+        display:none;
+    }
+    .main{
+        flex-direction: column;
+        max-width: 614px;
+    }
+}
+@media screen and (max-width: 640px){
+    .searchBar{
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+div{
+    margin: 20px;
+}
+.btn{
+    background-color: #aa55ff;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+}
+.btn:hover{
+    background-color: #aa99ff;
+}
+form{
+    background-color: antiquewhite;
+}
+form > div{
+    background-color: green;
+}
+form > div:first-child{
+    background-color: red;
+}
+form > div:last-child{
+    background-color: yellow;
+}
+.last::before{
+    content: "before";
+    background-color: orange;
+}
+.last::after{
+    content: "after";
+}

@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    width: 100%;
+    border: 1px solid black;
+}
+.headerLeftSide{
+    background-color: silver;
+    width: 60%;
+    height: 40px;
+}
+.headerRightSide{
+    background-color: silver;
+    width: 30%;
+    height: 40px;
+}

@@ -1,0 +1,653 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: PT Sans,sans-serif;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+svg{
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+.headCont{
+    padding: 0 40px;
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.smallCont{
+    padding-top: 20px;
+}
+.leftBar{
+    float: left;
+    display: flex;
+}
+.rightBar{
+    float:right;
+    display:flex;
+    max-width: 250px;
+    justify-content: space-between;
+    align-items: center;
+}
+.widg{
+    margin-left: 20px;
+    padding-bottom: 20px;
+}
+input{
+    height: 37px;
+    width: 500px;
+    padding-left: 15px;
+}
+.stickyMenu{
+    margin-top:auto;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: white;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    height: 39px;
+}
+button img{
+    height: 37px;
+    width: 37px;
+    background-color: white;
+    padding: 0;
+}
+button:hover{
+    cursor: pointer;
+}
+.tooltip{
+    height: 39px;
+    width: 39px;
+    margin-left: 10px;
+    border: 0.5px solid rgba(224, 224, 224, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    z-index: 1000;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #287df0;;
+    min-width: 120px;
+    z-index: 1000;
+}
+.dropdown-content a{
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    z-index: 1001;
+}
+.dropdown-content a:hover{
+    opacity: 0.3;
+    z-index: 1001;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    z-index: 1001;
+}
+.dropdown:hover .tooltip{
+    background-color: #287df0;
+    z-index: 1000;
+}
+.searchBar{
+    display: flex;
+    margin-left: 30px;
+}
+.test{
+    height:300px;
+    width:600px;
+    background-color:yellow;
+}
+header{
+    height: 84px;
+}
+.navMenu{
+    max-width: 1170px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    justify-content: space-between;
+}
+.navLeft{
+    display:flex;
+    align-items: center;
+    width: 80%;
+    height: 40px;
+}
+.navRight{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    outline: 0.5px solid rgba(224, 224, 224, 0.5);
+    color: #287df0;
+}
+.navLeft > div{
+    height: 100%;
+    font-size: 13px;
+}
+.navLeft > div:not(.home){
+    width: 10.6%;
+}
+.home{
+    background-color: #287df0;
+    width: 40px;
+}
+.navLeft > div:hover{
+    color: #287df0;
+    cursor: pointer;
+}
+.navRight:hover{
+    cursor: pointer;
+}
+.photoNews{
+    margin: 10px auto;
+    width: 100%;
+    max-width: 1170px;
+    height: 513px;
+    display: flex;
+    justify-content: space-between;
+}
+.bigPhoto{
+    height: 100%;
+    width: calc(50% - 2.5px);
+    overflow: hidden;
+    position: relative;
+}
+.bigBackg{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2021/12/288793-23122021-1640222691-1730528259-Saeid_MOLLAEI2-104543-12651274961.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.smallFour{
+    height: 100%;
+    width: calc(50% - 2.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.smallTwo{
+    height: calc(50% - 2.5px);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.smallOne{
+    height: 100%;
+    width: calc(50% - 2.5px);
+    overflow: hidden;
+    position: relative;
+}
+.topLeft{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2022/03/292241-30032022-1648601427-60886390-istanbul.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.topRight{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://mgl.gogo.mn/newsn/images/ck/2022/03/29/28567308_web1_copy_TFlag_map_of_Alaska--2--copy-161019-725313085.jpeg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.botLeft{
+    height: 100%;
+    width: 100%;
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292216-29032022-1648536572-9022846-300x250.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.botRight{
+    height: 100%;
+    width: 100%;
+    background-image: url("https://mgl.gogo.mn/banner_gogo/banner/2022/03/29/news-b2/videourl/1648539074/Gogo%20B2%20255%20293%20%20(2).jpg");
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.bigBackg:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.topLeft:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.topRight:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.botLeft:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.botRight:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.blueBG{
+    padding: 5px 10px 5px 10px;
+    line-height: 15px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #287df0;
+    color: white;
+    text-transform: uppercase;
+}
+.news{
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    max-width: 1170px;
+}
+.newsToday{
+    height: 100%;
+    width: calc(67% - 5px);
+}
+.newsRight{
+    height: 100%;
+    width: calc(33% - 5px);
+}
+.newsTodayTitle{
+    width: 40%;
+    height: 40px;
+    background-color: #287df0;
+    color: white;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.newsList{
+    width: 100%;
+    height: 150px;
+    margin-top: 10px;
+    display: flex;
+}
+.newsImportant div:first-of-type{
+    width: 100%;
+    height: 60px;
+}
+h4{
+    border-top: 6px solid #287df0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    color:#287df0;
+    text-transform: uppercase;
+}
+.ontsloh{
+    margin-bottom: 20px;
+}
+.spotLight{
+    width: 90%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgba(224, 224, 224, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.newsTrending{
+    overflow: scroll;
+    max-height: 585px;
+    outline: 1px solid rgba(224, 224, 224, 0.5);
+}
+.newsTrending div:not(:first-of-type){
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.otherNews{
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+    display:flex;
+    background-color: rgb(226, 226, 226);
+    justify-content: flex-end;
+}
+.otherNews:hover{
+    cursor: pointer;
+}
+.graphicNews{
+    width: 100%;
+    height: auto;
+    background-color: #1f1f1f;
+    margin-top: 30px;
+    color: white;
+}
+.newsCont{
+    height: 100%;
+    width: 75%;
+    margin: 0 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.newsType{
+    color: silver;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.newsTitle{
+    color: black;
+    height: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+.newsShort{
+    height: auto;
+    color: silver;
+    font-size: 13px;
+}
+.newsLike{
+    height: 17px;
+    color: silver;
+    font-size: 14px;
+    font-weight: bold;
+}
+.newsBG{
+    height: 100%;
+    width: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.newsToday1{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/1000/images/c/2021/02/268444-03022021-1612333549-1380244653-221297-31012018-1517380827-1415278187-180995-15032016-1458012927-1035083972--04012016-1451886178-1304220701-noat_barimt-135351-1553373484-175252-1619565306.jpeg);
+}
+.newsToday2{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/-31032022-1648694854-743815126-sodrama.jpg);
+}
+.newsToday3{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292296-31032022-1648693647-110244005-Capture.JPG);
+}
+.newsToday4{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/02/-11022022-1644561084-1796833952-huuhedharah10-131537-1609810258.jpeg);
+}
+.newsToday5{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2021/03/276400-26032021-1616748260-1505137675-togtohsuren.jpg);
+}
+.newsToday6{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292293-31032022-1648692796-1158757576-220330104806-03-hubble-distant-star-exlarge-169.jpg);
+}
+.newsToday7{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292290-31032022-1648691020-781950120-mick-schumacher-saudi-arabia-crash-2022-planetf1-1200x630.jpg);
+}
+.newsToday8{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292291-31032022-1648690820-1580313524-51f209d7-021d-40ca-8661-7e9e6c9c2182.jpg);
+}
+.newsToday9{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292292-31032022-1648690867-1278491837-rio_tinto.jpg);
+}
+.newsToday10{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/02/-14022022-1644800555-2096448956-huvsgul-135629-1246450614.jpeg);
+}
+.newsToday11{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292288-31032022-1648689014-137427596--12032021-1615547240-301426176-turiin_albanii_shalgalt.jpg);
+}
+.newsToday12{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292287-31032022-1648687602-89649278-cars.jpg);
+}
+.newsToday13{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292286-31032022-1648687527-15512104-Capture.JPG);
+}
+.newsToday14{
+    background-image: url("https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292225-30032022-1648642090-806905163-pjimage_(75).jpg");
+}
+.newsToday15{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292285-31032022-1648686254-433650080-singapore.jpg);
+}
+.newsToday div:hover{
+    cursor: pointer;
+}
+.otherNews div{
+    background-color: #287df0;
+    color: white;
+}
+.slBG{
+    width: 85%;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.sl1{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292287-31032022-1648687602-89649278-cars.jpg);
+}
+.sl2{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2021/02/268444-03022021-1612333549-1380244653-221297-31012018-1517380827-1415278187-180995-15032016-1458012927-1035083972--04012016-1451886178-1304220701-noat_barimt-135351-1553373484-175252-1619565306.jpeg);
+}
+.sl3{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/292260-30032022-1648631942-690701037-buudai.jpg);
+}
+.sl4{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/420/images/c/2022/03/-31032022-1648696625-259125473-chuulgan.jpg)
+}
+.slLC{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slTitle{
+    width: 90%;
+    height: auto;
+    font-size: 16px;
+    font-weight: bold;
+}
+.newsSL{
+    outline: 1px solid rgba(224, 224, 224, 0.5);
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+}
+.trendNews{
+    width: 90%;
+    height: 130px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.tnNumber{
+    font-size: 40px;
+    color: #C41E3A;
+    text-transform: bold;
+}
+.tnNews{
+    display: flex;
+    width: auto;
+}
+.tnBG{
+    width: 35%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tnTitle{
+    font-size: 14px;
+}
+.tnPadding{
+    padding: 0 10px;
+}
+.tn1{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/292166-28032022-1648448964-1512684852-enkhamgalan1.jpg);
+}
+.tn2{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/292264-30032022-1648621667-1526910332-1.jpg);
+}
+.tn3{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/ck/2019/06/30/236955-05032019-1551772051-130792839-erdenebileg_hhb1-180700-660882006-161516-1392573756.jpeg);
+}
+.tn4{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/292224-29032022-1648547683-1983005768-ganbold1.jpg);
+}
+.tn5{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/292193-29032022-1648514379-1798239847-smith.jpg);
+}
+.tn6{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2021/05/279587-28052021-1622163193-872485853-260935-11092020-1599794845-1721960176-Tsagdaa_2-093744-19896618351.jpeg);
+}
+.tn7{
+    background-image: url(https://mgl.gogo.mn/newsn/thumbnail/200/images/c/2022/03/292241-30032022-1648601427-60886390-istanbul.jpg);
+}
+.maxwidth{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.gnewsType{
+    font-family: PT Sans,sans-serif;
+    color:#287df0;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.gnewsType:hover{
+    color:white;
+    cursor: pointer;
+}
+.gNews{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+.gCont{
+    width: 20%;
+}
+.gCont:hover{
+    cursor: pointer;
+}
+.gBG{
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    height: 130px;
+    max-width: 95%;
+}
+.gTitle{
+    margin: 7px 10px 5px 0;
+    font-family: PT Sans, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    max-height: 54px;
+    overflow: hidden;
+}
+.vButton{
+    padding: 5px;
+    background: #287df0;
+    height: 25px;
+    width: 25px;
+    position: absolute!important;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+}
+.gBG img{
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+.footer{
+    max-width: 1170px;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.footerTop{
+    height: 39px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.gogo img{
+    height: 39px;
+}
+.stuff{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    color: #287df0;
+    align-items: center;
+}
+.stuff div{
+    margin-left: 30px;
+}
+.stuff div:hover{
+    cursor: pointer;
+    color: #132fbb;
+}
+.footerBot{
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+.pnText{
+    position: absolute;
+    bottom: 0;
+    max-width: 100%;
+    height: auto;
+    padding: 0 20px 15px;
+}
+.pnTitle{
+    font-size: 21px;
+    color: white;
+    margin: 5px 0;
+    font-weight: bold;
+}
+.pnLike{
+    color: white;
+    font-size: 15px;
+}
+a:visited{
+    color:#287df0;
+}

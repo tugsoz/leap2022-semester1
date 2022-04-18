@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    margin: 100px 0 0 100px;
+    outline: 1px solid white;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transform: skewX(45deg);
+}
+
+@keyframes move{
+    from{
+        background-color: black;
+        outline-color: white;
+    }
+    to{
+        background-color: white;
+        outline-color: black;
+    }
+
+
+
+/* 0%{
+    transform: translateX(100);
+    transform: translateY(100);
+}
+25%{
+    transform: translateX(200);
+    transform: translateY(200);
+}
+50%{
+    transform: translateX(300);
+    transform: translateY(300);
+}
+100%{
+    transform: translateX(400);
+    transform: translateY(400);
+} */
+}

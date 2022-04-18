@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+}
+.bg{
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-image: url(https://www.teahub.io/photos/full/19-196962_world-of-warcraft.jpg);
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section img{
+    max-width: 100%;
+    width: 40vw;
+    max-width: 550px;
+    min-width: 400px;
+    margin: 2vw 0 4vw; 
+}
+.grid{
+    z-index: 1;
+    display: grid;
+    grid-gap: 2vw;
+    grid-template-rows: repeat(14,1fr);
+    grid-template-columns: repeat(13,1fr);
+    width: 90vw;
+    height: 90vw;
+    margin: 0 auto 5vw;
+}
+.background{
+    overflow: hidden;
+    display:flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.jaina{
+    grid-area: 1/6/6/9;
+    background-image: url(https://static.wikia.nocookie.net/wowpedia/images/8/88/HSKT_Jaina.jpg/revision/latest?cb=20211012192353);
+    background-position-x: center;
+}
+.thrall{
+    grid-area: 1/9/4/14;
+    background-image: url(./Thrall.png);
+}
+.yoggsaron{
+    grid-area: 5/1/9/6;
+    background-image: url(https://i.pinimg.com/originals/17/28/17/1728176a468f5112e21c027e0c61473a.jpg);
+    background-position-y: 4vw;
+}
+.arthas{
+    grid-area: 1/1/6/6;
+    background-image: url(https://i1.sndcdn.com/artworks-000542493981-drkfra-t500x500.jpg);
+    background-position-x: center;
+}
+.voljin{
+    grid-area: 6/6/9/9;
+    background-image: url(https://blizzardwatch.com/wp-content/uploads/2016/01/Voljin_darkspear_leader.jpg);
+    background-position: center;
+}
+.illidan{
+    grid-area: 4/9/9/14;
+    background-image: url(https://images.wallpapersden.com/image/download/illidan-stormrage_a2xuaGeUmZqaraWkpJRnamtlrWZlbWU.jpg);
+    background-position: center;
+}
+.sylvanas{
+    grid-area: 9/1/15/6;
+    background-position: center;
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/209/609/97/world-of-warcraft-world-of-warcraft-shadowlands-sylvanas-windrunner-hd-wallpaper-preview.jpg);
+}
+.kael{
+    z-index: 1;
+    grid-area: 9/6/15/9;
+    background-position-x: -6vw;
+    background-image: url(https://static.wikia.nocookie.net/hearthstone_gamepedia/images/2/21/Kael%27thas_Sunstrider_full.jpg/revision/latest?cb=20200609164105);
+}
+.kael div{
+    padding-left: 2vw;
+    text-align: start;
+}
+.archimonde{
+    z-index: 2;
+    grid-area: 9/8/15/11;
+    background-position: center;
+    background-image: url(https://static.wikia.nocookie.net/wowwiki/images/f/fc/Kiljaedendeciever2.jpg/revision/latest?cb=20080326002241);
+}
+.kelthuzad{
+    grid-area: 9/11/15/14;
+    background-position: center;
+    background-image: url(https://i.pinimg.com/originals/47/d4/6f/47d46fa8fac3c0bdd2fb8ce1c0dfde8b.jpg);
+}
+.namePlate{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.4);
+    font-size: 2.5vw;
+    color: white;
+    font-family: 'My Soul', cursive;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    section img{
+        width: 70%;
+    }
+    .grid{
+        height: auto;
+        grid-template-rows: repeat(130,1fr);
+        grid-template-columns: repeat(8,1fr);
+    }
+    .namePlate{
+        font-size: 5vw;
+    }
+    .arthas{
+        grid-area: 1/1/26/6;
+    }
+    .jaina{
+        grid-area: 1/6/26/9;
+    }
+    .thrall{
+        grid-area: 26/1/51/6;
+    }
+    .voljin{
+        grid-area: 26/6/51/9;
+    }
+    .yoggsaron{
+        grid-area: 51/1/76/6;
+        background-position-y: center;
+    }
+    .kelthuzad{
+        grid-area: 51/6/76/9;
+    }
+    .illidan{
+        grid-area: 76/1/101/6;
+    }
+    .archimonde{
+        grid-area: 76/6/101/9;
+    }
+    .sylvanas{
+        grid-area: 101/1/131/6;
+    }
+    .kael{
+        background-position-x: center;
+        grid-area: 101/6/131/9;
+    }
+    .kael div{
+        padding-left: 0;
+        text-align: center;
+    }
+}

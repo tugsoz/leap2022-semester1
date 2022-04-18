@@ -1,0 +1,24 @@
+.container{
+    display:grid;
+    grid-template-areas:   "header header"
+                            "content sidebar"
+                            "footer footer";
+    grid-template-rows:    50px 500px 50px;
+    grid-template-columns: 1fr 300px;
+}
+.header{
+    grid-area: header;
+    background: green
+}
+.section{
+    grid-area: content;
+    background: cyan
+}
+.sidebar{
+    grid-area: sidebar;
+    background: pink
+}
+.footer{
+    grid-area: footer;
+    background: red;
+}

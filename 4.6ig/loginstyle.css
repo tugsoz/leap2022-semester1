@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.mainContainer{
+    outline: 1px solid gray;
+    height: 882px;
+    max-width: 935px;
+    width: 100%;
+    margin: 32px auto 0;
+}
+.leftContainer{
+    outline: 1px solid red;
+    height: 581.15px;
+    width: 380.31px;
+    margin-right: 32px;
+    margin-bottom: 12px;
+    background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones-2x.png/cbc7174b4f05.png);
+    background-repeat: no-repeat;
+    background-position: -46px 0;
+    background-size: 468.32px 634.15px;
+}
+.rightContainer{
+    outline: 1px solid orange;
+    margin-top: 12px;
+    width: 350px;
+    height: 800px;
+    flex-direction: column;
+    justify-content: center;
+}
+.login{
+    outline: 1px solid blue;
+    height: 416px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.logo{
+    margin-top: 36px;
+    margin-bottom: 12px;
+}
+.input{
+    outline: 1px solid rgba(219, 219, 219, 1);
+    border-radius: 2px;
+    height: 21px;
+    width: 268px;
+    padding: 9px 0 7px 8px;
+    margin: 4px 0;
+}
+input{
+    border: hidden;
+    width: 258px;
+    height: 20px;
+    font-size: 12px;
+}
+::placeholder{
+    color: rgba(142,142,142,1)
+}
+input:focus{
+    outline: none;
+}
+button{
+    margin: 8px 0;
+    background-color: rgba(0,149,246,.3);
+    border: none;
+    color: white;
+    padding: 5px 9px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    font-size: 14px;
+    height: 30px;
+    width: 278px;
+    border-radius: 5px;
+}
+.or{
+    height: 15px;
+    width: 268px;
+    margin: 10px 40px 18px;
+    display:flex;
+}
+.zuraas{
+    margin-top: 7px;
+    height: 1px;
+    width: 106.59px;
+    border-top: 1px solid rgba(219, 219, 219, 1);
+}
+.orText{
+    height: 15px;
+    width: 18.83px;
+    margin: 0 18px;
+    font-size: 13px;
+    color: rgba(130, 130, 130, 0.8);
+    font-weight: bold;
+}

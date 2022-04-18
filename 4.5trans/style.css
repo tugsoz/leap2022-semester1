@@ -1,0 +1,161 @@
+body{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/C%C3%A9vennes_France_night_sky_with_stars_03.jpg/1200px-C%C3%A9vennes_France_night_sky_with_stars_03.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.round{
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+.sun{
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    box-shadow: 0px 0px 10px 15px yellow;;
+}
+.mercury{
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    height: 20px;
+    width: 20px;
+    background-color: #708090;
+    transform-origin: 60px 60px;
+    animation-duration: 8.8s;
+}
+.venus{
+    top: calc(50% - 90px);
+    left: calc(50% - 90px);
+    height: 20px;
+    width: 20px;
+    background-color: #FADA5E;
+    transform-origin: 90px 90px;
+    animation-duration: 22.47s;
+}
+.earth{
+    top: calc(50% - 120px);
+    left: calc(50% - 120px);
+    height: 20px;
+    width: 20px;
+    background-image: url(https://cdn.mos.cms.futurecdn.net/FaWKMJQnr2PFcYCmEyfiTm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform-origin: 120px 120px;
+    animation-duration: 36.5s;
+}
+.mars{
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    height: 20px;
+    width: 20px;
+    background-color: crimson;
+    transform-origin: 150px 150px;
+    animation-duration: 68.7s;
+}
+.jupiter{
+    top: calc(50% - 180px);
+    left: calc(50% - 180px);
+    height: 20px;
+    width: 20px;
+    background-color: rgb(141, 93, 25);
+    transform-origin: 180px 180px;
+    animation-duration: 1.19s;
+}
+.saturn{
+    top: calc(50% - 210px);
+    left: calc(50% - 210px);
+    height: 20px;
+    width: 20px;
+    background-color: #563a1a;
+    transform-origin: 210px 210px;
+    animation-duration: 2.95s;
+}
+.uranus{
+    top: calc(50% - 240px);
+    left: calc(50% - 240px);
+    height: 20px;
+    width: 20px;
+    background-color: #32638b;
+    transform-origin: 240px 240px;
+    animation-duration: 8.4s;
+}
+.neptune{
+    top: calc(50% - 270px);
+    left: calc(50% - 270px);
+    height: 20px;
+    width: 20px;
+    background-color: #191ca8;
+    transform-origin: 270px 270px;
+    animation-duration: 24.77s;
+}
+.toiroh{
+    animation-name: toiroh;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes toiroh{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+}
+.path{
+    z-index: 0;
+    border-radius: 50%;
+    position: absolute;
+    outline: 1px solid gray;
+    background-color: transparent;
+}
+.path1{
+    top: calc(50% - 70px);
+    left: calc(50% - 70px);
+    height: 140px;
+    width: 140px;
+}
+.path2{
+    top: calc(50% - 112.5px);
+    left: calc(50% - 112.5px);
+    height: 225px;
+    width: 225px;
+}
+.path3{
+    top: calc(50% - 155px);
+    left: calc(50% - 155px);
+    height: 310px;
+    width: 310px;
+}
+.path4{
+    top: calc(50% - 197.5px);
+    left: calc(50% - 197.5px);
+    height: 395px;
+    width: 395px;
+}
+.path5{
+    top: calc(50% - 240px);
+    left: calc(50% - 240px);
+    height: 480px;
+    width: 480px;
+}
+.path6{
+    top: calc(50% - 282.5px);
+    left: calc(50% - 282.5px);
+    height: 565px;
+    width: 565px;
+}
+.path7{
+    top: calc(50% - 325px);
+    left: calc(50% - 325px);
+    height: 650px;
+    width: 650px;
+}
+.path8{
+    top: calc(50% - 367.5px);
+    left: calc(50% - 367.5px);
+    height: 735px;
+    width: 735px;
+}

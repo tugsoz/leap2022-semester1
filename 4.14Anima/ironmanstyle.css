@@ -1,0 +1,95 @@
+body{
+    background-color: black;
+}
+section{
+    background-image: url(https://wallpapercave.com/wp/wp4445857.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    overflow: hidden;
+    background-color: black;
+    margin: 50% 0 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:20%;
+    width:20%;
+}
+.heartCont{
+    z-index:4;
+    position: absolute;
+    background-color: transparent;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px cyan, -1px -1px 5px cyan, -1px 1px 5px cyan, 1px -1px 5px cyan, 1px 1px 5px inset cyan, -1px -1px 5px inset cyan, -1px 1px 5px inset cyan, 1px -1px 5px inset cyan;
+}
+.crosses{
+    z-index:3;
+    display:flex;
+    align-items: center;
+    position: relative;
+    top:0;
+    height:200px;
+    width:200px;
+}
+.cross{
+    width: 200px;
+    height: 20px;
+    position: absolute;
+    background-color: #025b69;
+    box-shadow: 1px 1px 5px cyan, -1px -1px 5px cyan, -1px 1px 5px cyan, 1px -1px 5px cyan, 1px 1px 5px inset cyan, -1px -1px 5px inset cyan, -1px 1px 5px inset cyan, 1px -1px 5px inset cyan;
+}
+.circle{
+    position: absolute;;
+    z-index: 5;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    background-color: #025b69;
+    box-shadow: 1px 1px 5px cyan, -1px -1px 5px cyan, -1px 1px 5px cyan, 1px -1px 5px cyan, 1px 1px 5px inset cyan, -1px -1px 5px inset cyan, -1px 1px 5px inset cyan, 1px -1px 5px inset cyan;
+}
+.innerCircle{
+    position: absolute;;
+    z-index: 6;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 5px cyan, -1px -1px 5px cyan, -1px 1px 5px cyan, 1px -1px 5px cyan, 1px 1px 5px inset cyan, -1px -1px 5px inset cyan, -1px 1px 5px inset cyan, 1px -1px 5px inset cyan;
+}
+.innerSecond{
+    position: absolute;;
+    z-index: 7;
+    height: 75px;
+    width: 75px;
+    border: 5px solid #025b69;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 1px 5px cyan, -1px -1px 5px cyan, -1px 1px 5px cyan, 1px -1px 5px cyan, 5px 5px 15px inset cyan, -5px -5px 15px inset cyan, -5px 5px 15px inset cyan, 5px -5px 15px inset cyan;
+}
+.rotate{
+    animation-duration: 5s;
+    animation-name: rotate;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}

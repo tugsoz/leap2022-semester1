@@ -1,0 +1,15 @@
+.parent{
+    height: 100vh;
+    width: 500px;
+    background-color: orange;
+}
+.child{
+    width: 100px;
+    height: 100vh;
+    background-color: red;
+    padding: 10px;
+}
+.myImage{
+    margin-left: 150px;
+    margin-top: 250px;
+}
